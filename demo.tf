@@ -7,5 +7,5 @@ variable "sample" {
 # }
 
 output "batch_check"" {
-    value = "Current batch number is ${var.sample}"
+    output = "Current batch number is ${var.sample}"
 }
