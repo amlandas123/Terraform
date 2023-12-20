@@ -8,7 +8,7 @@ output sample {
 # }
 
 variable demo {
-    type = "Hey how are you"
+    default = "how are you"
 }
 
 output trial {
