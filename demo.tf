@@ -1,17 +1,10 @@
-output sample {
-    value = "Hello World"
+variable "sample"{}
+
+variable "batch"{
+    default = "batch56"
 }
 
-
-# variable number {
-#     value= 2024
-# }
-
-variable demo {
-    default = "how are you"
-}
-
-output trial {
-    value = var.demo
+output "sample" {
+    value = var.batch
 }
 
