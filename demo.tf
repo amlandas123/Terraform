@@ -3,10 +3,10 @@ output sample {
 }
 
 
-variable number {
-    value= 2024
-}
+# variable number {
+#     value= 2024
+# }
 
-output sample {
-    value = var.number
+output demo {
+    value = "Keep Working"
 }
