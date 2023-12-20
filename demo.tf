@@ -7,6 +7,11 @@ output sample {
 #     value= 2024
 # }
 
-output demo {
-    value = "Keep Working"
+variable demo {
+    value = "Hey how are you"
 }
+
+output trial {
+    value = var.demo
+}
+
