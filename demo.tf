@@ -1,10 +1,7 @@
-variable "sample"{}
-
-variable "batch"{
-    default = "batch56"
+variable "sample" {
+     default = "hello"
 }
 
-output "sample" {
-    value = var.batch
+output "demo" {
+     value = var.sample
 }
-
