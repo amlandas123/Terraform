@@ -8,7 +8,7 @@ output sample {
 # }
 
 variable demo {
-    value = "Hey how are you"
+    type = "Hey how are you"
 }
 
 output trial {
