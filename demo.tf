@@ -2,10 +2,6 @@ variable "sample" {
      default = "batch56"
 }
 
-# output "demo" {
-#      value = var.sample
-# }
-
-output "batch_check"" {
-    batch = "Current batch number is ${var.sample}"
+output "demo_check" {
+    value = "The batch at present is ${var.sample}"
 }
