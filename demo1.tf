@@ -28,5 +28,5 @@ variable "mapping" {
 }
 
 output "mapping_op" {
-    value = "This is ${var.mapping{"country"}} and my name is ${var.mapping{"name"}} from ${var.mapping{"city"}} and my batch is ${var.mapping{batch}}"
+    value = "This is ${var.mapping{country}} and my name is ${var.mapping{name}} from ${var.mapping{city}} and my batch is ${var.mapping{batch}}"
 }
