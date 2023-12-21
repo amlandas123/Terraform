@@ -1,12 +1,16 @@
+variable "listing" {
+    default = [
+        "Amlan",
+        "Priya",
+        "Mou",
+        1988,
+        true
+    ]
+  
+}
 
-variable "country" {}
-
-output "name_country" {
-    value = "The name of the country is ${var.country}"
+output "listing_op" {
+    value = "Hi this is ${var.listing[1]} wife of ${var.listing[0]} who was born in the year ${var.listing[3]}"
 }
 
 
-variable "environment" {}
-output "name_env" {
-    value = "name of the environment is ${var.environment}"
-}
