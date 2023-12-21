@@ -40,3 +40,8 @@ variable "state" {}
 output "state_op" {
     value = "I live in ${var.state}"
 }
+
+variable "country" {}
+output "country_op" {
+    value = "Iam from ${var.country}"
+}
