@@ -36,3 +36,7 @@ output "city_op" {
     value = "I live in ${var.city}"
 }
 
+variable "state" {}
+output "state_op" {
+    value = "I live in ${var.state}"
+}
