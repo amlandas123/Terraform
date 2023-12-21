@@ -1,5 +1,5 @@
 
-Variable listing
+#Variable Listing example
 variable "listing" {
     default = [
         "Amlan",
