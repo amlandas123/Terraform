@@ -17,6 +17,10 @@ variable "sample2" {
 variable "sample3" {
     default = "Amlan"
 }
+
+variable "sample4" {
+    default = "ID-225025"
+}
 output "print" {
-    value = "This is ${var.sample3} from ${var.sample} who scored ${var.sample1} marks in ${var.sample2} exams "
+    value = "This is ${var.sample3} with ${var.sample4} from ${var.sample} who scored ${var.sample1} marks in ${var.sample2} exams "
 }
