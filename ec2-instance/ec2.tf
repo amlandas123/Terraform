@@ -16,7 +16,7 @@ output "instance_arn" {
 }
 
 resource "aws_security_group" "allow_tls" {
-  name        = "allow_tls"
+  name        = "b56_allow_tls"
   description = "Allow TLS inbound traffic"
 #   vpc_id      = aws_vpc.main.id
 
