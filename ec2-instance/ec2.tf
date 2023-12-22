@@ -10,3 +10,7 @@ resource "aws_instance" "app1" {
 output "private_dns" {                #IP Address are Attributes which gives post output
     value = aws_instance.app1.private_dns
 }
+
+output "instance_arn" {
+    value = aws_instance.app1.arn
+}
