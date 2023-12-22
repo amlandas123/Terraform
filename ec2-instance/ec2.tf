@@ -12,7 +12,7 @@ output "private_dns" {                #IP Address are Attributes which we get po
 }
 
 output "instance_arn" {
-    value = aws_instance.app1.arn
+    value = aws_instance.app1.security_groups
 }
 
 resource "aws_security_group" "allow_tls" {
