@@ -3,7 +3,7 @@ resource "aws_instance" "app1" {
   instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.dasa2024.id] 
   tags = {
-    Name = "Devops-Instance"
+    Name = "Devops-Amlan"
   }
 }  
 
