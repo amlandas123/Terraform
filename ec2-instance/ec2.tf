@@ -9,7 +9,6 @@ resource "aws_instance" "app1" {
 
 data "aws_ami" "ami1" {
   most_recent      = true
-  name_regex       = "Workstation"
   owners           = ["512249161831"]
 }  
 
