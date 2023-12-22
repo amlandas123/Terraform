@@ -7,6 +7,6 @@ resource "aws_instance" "app1" {
   }
 }  
 
-output "public_ip" {                #IP Address are Attributes which gives post output
-    value = aws_instance.app1.associate_public_ip_address
+output "private_dns" {                #IP Address are Attributes which gives post output
+    value = aws_instance.app1.private_dns
 }
