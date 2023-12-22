@@ -21,6 +21,6 @@ resource "aws_security_group" "dasa2024" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "dasa2024"
   }
 }
