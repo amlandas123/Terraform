@@ -8,5 +8,5 @@ resource "aws_instance" "app1" {
 }  
 
 output "instance_arn" {                #IP Address are Attributes which gives post output
-    value = aws_instance.arn
+    value = aws_instance.app1.associate_public_ip_address
 }
