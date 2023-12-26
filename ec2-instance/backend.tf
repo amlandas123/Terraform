@@ -1,3 +1,5 @@
+# This is used to save the terraform state file in the S3
+
 terraform {
   backend "s3" {
     bucket = "terraformstate-devops-batch56"
