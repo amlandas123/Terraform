@@ -12,3 +12,7 @@ module "local" {
     source = "./local"
     
 }
+
+output "pub_output" {
+    value = module.local.public_ip
+}

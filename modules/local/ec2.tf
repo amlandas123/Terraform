@@ -3,3 +3,11 @@ resource "aws_instance" "app1" {
   instance_type = "t2.micro"
 
 }  
+
+#Getting output after creating the resource
+output "public_ip" {
+    value = aws_instance.app1.associate_public_ip_address
+}
+
+
+
