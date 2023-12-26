@@ -9,7 +9,7 @@ terraform {
 }
 
 module "ec2" {
-    source = "./ec2"
+    source = "./local/ec2"
     sg     = module.sg.sg_id
 }
 
@@ -18,7 +18,7 @@ output "pub_output" {
 }
 
 module "sg" {
-    source = "./sg"
+    source = "./local/sg"
 
 }
 
