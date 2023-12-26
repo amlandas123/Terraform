@@ -8,7 +8,7 @@ terraform {
   }
 }
 
-module "ec2" {
+module "ec2_op" {
     source = "./local/ec2"
     sg     = module.sg.sg_id
 }
@@ -17,7 +17,7 @@ output "pub_output" {
     value = module.local.public_ip
 }
 
-module "sg" {
+module "sg_op" {
     source = "./local/sg"
 
 }
