@@ -9,16 +9,15 @@ terraform {
 }
 
 module "ec2_op" {
-    source = "./ec2"
+    source = "ec2"
     sg     = module.sg.sg_id
 }
-
-output "pub_output" {
-    value = module.local.public_ip
-}
+# output "pub_output" {
+#     value = module.local.public_ip
+# }
 
 module "sg_op" {
-    source = "./sg"
+    source = "sg"
 
 }
 
