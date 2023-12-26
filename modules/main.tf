@@ -9,7 +9,7 @@ terraform {
 }
 
 module "ec2_op" {
-    source = "ec2"
+    source = "/root/Terraform/modules/ec2"
     sg     = module.sg.sg_id
 }
 # output "pub_output" {
@@ -17,7 +17,7 @@ module "ec2_op" {
 # }
 
 module "sg_op" {
-    source = "sg"
+    source = "/root/Terraform/modules/sg"
 
 }
 
