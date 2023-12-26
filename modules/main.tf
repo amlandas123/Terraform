@@ -8,6 +8,6 @@ terraform {
   }
 }
 
-module "local " {
+module "local-module " {
     source = "./local"
 }
