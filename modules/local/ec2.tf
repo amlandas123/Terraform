@@ -6,7 +6,7 @@ resource "aws_instance" "app1" {
 
 #Getting output after creating the resource
 output "public_ip" {
-    value = aws_instance.app1.associate_public_ip_address
+    value = aws_instance.app1.public_ip
 }
 
 
