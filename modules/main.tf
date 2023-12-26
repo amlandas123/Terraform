@@ -9,5 +9,5 @@ terraform {
 }
 
 module "local " {
-    source = "../local "
+    source = "./local"
 }
