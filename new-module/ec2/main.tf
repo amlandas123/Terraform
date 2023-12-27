@@ -12,6 +12,6 @@ resource "aws_instance" "app1" {
 
 variable "sg" {}
 #Getting output after creating the resource.  Info that needs to be shared has to declare through output
-output "public_ip" {
-    value = aws_instance.app1.public_ip
-}
+# output "public_ip" {
+#     value = aws_instance.app1.public_ip
+# }
