@@ -33,17 +33,23 @@
 #     value = "This is ${var.mapping["country"]} and my name is ${var.mapping["name"]} from ${var.mapping["city"]} and my batch is ${var.mapping["batch"]}"
 # }
 
-variable "city" {}
-output "city_op" {
-    value = "I live in ${var.city}"
-}
+# variable "city" {}
+# output "city_op" {
+#     value = "I live in ${var.city}"
+# }
 
-variable "state" {}
-output "state_op" {
-    value = "I live in ${var.state}"
-}
+# variable "state" {}
+# output "state_op" {
+#     value = "I live in ${var.state}"
+# }
 
-variable "country" {}
-output "country_op" {
-    value = "Iam from ${var.country}"
+# variable "country" {}
+# output "country_op" {
+#     value = "Iam from ${var.country}"
+# }
+
+variable "mother" {}
+output "mother_op" {
+    default = "My mother name is ${var.mo}"
+  
 }
