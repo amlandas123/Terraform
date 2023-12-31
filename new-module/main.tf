@@ -8,12 +8,18 @@ terraform {
   }
 }
 
-module "ec2_op" {
-    source = "./ec2"
-    sg     = module.sg_op.sg_id
+module "vpc_op"{
+  source = "./vpc"
 }
 module "sg_op" {
     source = "./sg"
-
 }
+module "ec2_op" {
+    source = "./ec2"
+    vpc = module.vpc_op.vpc_id
+    sg  = module.sg_op.sg_id
+}
+
+
+
 
