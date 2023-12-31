@@ -49,7 +49,7 @@
 # }
 
 variable "mother" {}
-output "mother_op" {
-    default = "My mother name is ${var.mo}"
-  
+
+output "name" {
+  value = "My mother name is ${var.mother}"
 }
