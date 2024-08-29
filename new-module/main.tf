@@ -16,7 +16,7 @@ module "sg_op" {
 }
 module "ec2_op" {
     source = "./ec2"
-    vpc = module.vpc_op.vpc_id
+    vpc = module.aws_network_interface
     sg  = module.sg_op.sg_id
 }
 

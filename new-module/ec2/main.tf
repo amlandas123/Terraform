@@ -1,8 +1,12 @@
 resource "aws_instance" "app1" {
-  count = 3
+  count = 2
   ami           = "ami-06192c6f2b41b7741"   # AMI:This are Arguments which we get before machine starts
   instance_type = "t2.micro"
-  vpc_security_group_ids = [var.sg]
+  
+  network_interface {
+    network_interface_id = var.vpc
+    device_index         = 0
+  }
 
   tags = {
     Name = "Amlan-instance-${count.index +1}"
