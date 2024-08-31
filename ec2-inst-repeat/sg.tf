@@ -24,3 +24,4 @@ resource "aws_security_group" "dasa2024" {
     Name = "amlandas2024"
   }
 }
+
