@@ -13,6 +13,6 @@ module "local-module" {
 }
 
 output "public_ip" {
-  value = module.local-module.pub;ic_ip
+  value = module.local-module.public_ip
 }
 
