@@ -8,5 +8,5 @@ output "public_ip" {
 }
 
 output "vpc_id" {
-    value = aws_instance.app-amlan.vpc_security_group_ids
+    value = aws_instance.app-amlan.vpc_id
 }
