@@ -7,16 +7,7 @@ resource "aws_instance" "app" {
   }
 }
 
-data "aws_ami" "ami" {
-  most_recent = true
 
-  owners = ["471112781280"]
-
-  filter {
-    name   = "name"
-    values = ["amlan-image"]
-  }
-}
 
 
 # resource "aws_ebs_volume" "devops-volume" {
