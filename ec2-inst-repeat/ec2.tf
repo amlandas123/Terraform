@@ -7,6 +7,13 @@ resource "aws_instance" "app" {
   }
 }
 
+data "aws_ami" "ami123" {
+  most_recent = true
+  name_regex  = "DevOps-LabImage-Centos-8"
+  owners      = ["471112781280"]
+
+}
+
 resource "aws_ebs_volume" "devops-volume" {
   availability_zone = "us-east-1a"
   size              = 50
@@ -27,10 +34,5 @@ output "instance_arn" {
     value = aws_instance.app.arn
 }
 
-data "aws_ami" "ami123" {
-  most_recent = true
-  name_regex  = "DevOps-LabImage-Centos-8"
-  owners      = ["471112781280"]
 
-}
 
