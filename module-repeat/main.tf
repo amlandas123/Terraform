@@ -7,10 +7,12 @@ terraform {
     region = "us-east-1"
   }
 }
-
+#root module where you want to run the command
 module "local-module" {
     source = "./local"
 }
 
-
+output "public_ip" {
+  value = module.local-module.pub;ic_ip
+}
 
