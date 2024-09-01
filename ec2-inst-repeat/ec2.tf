@@ -8,11 +8,16 @@ resource "aws_instance" "app" {
 }
 
 data "aws_ami" "ami" {
-  most_recent   = true
-  name_regex    = "DevOps-LabImage-Centos-8"
-  owners        = ["471112781280"]
+  most_recent = true
 
+  owners = ["471112781280"]
+
+  filter {
+    name   = "name"
+    values = ["DevOps-LabImage-Centos-8"]
+  }
 }
+
 
 resource "aws_ebs_volume" "devops-volume" {
   availability_zone = "us-east-1a"
@@ -25,14 +30,7 @@ resource "aws_volume_attachment" "devops-volume1" {
   instance_id = aws_instance.app.id
 }
 
-output "instance_dns" {
-    value = aws_instance.app.private_dns
-  
-}
 
-output "instance_arn" {
-    value = aws_instance.app.arn
-}
 
 
 
