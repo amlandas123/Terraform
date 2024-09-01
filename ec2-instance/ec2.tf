@@ -1,4 +1,4 @@
-resource "aws_instance" "app1" {
+resource "aws_instance" "app" {
   ami           = data.aws_ami.ami1.id   # AMI:This are Arguments which we get before machine starts
   instance_type = "t3.micro"
   vpc_security_group_ids = [aws_security_group.dasa2024.id] 

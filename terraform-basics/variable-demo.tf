@@ -13,6 +13,14 @@ variable "listing" {
   
 }
 
+variable "language" {
+    default = ["Hindi","Bengali","English", "Kannada"]
+  
+}
+
+output "language_op" {
+    value = "Hi Everyone, Iam from Assam and i speak ${var.language[1]} but at present Iam in Bangalore and so I speak ${var.language[3]} }" 
+}
 output "listing_op" {
     value = "Hi this is ${var.listing[1]} wife of ${var.listing[0]} who was born in the year ${var.listing[3]}"
 }
