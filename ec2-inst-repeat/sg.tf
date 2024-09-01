@@ -1,5 +1,5 @@
 resource "aws_security_group" "dasa2024" {
-  name        = "amlandas2024_allow_tls"
+  name        = "dasa2024"
   description = "Allow TLS inbound traffic"
 #   vpc_id      = aws_vpc.main.id
 
