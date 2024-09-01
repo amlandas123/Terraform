@@ -19,16 +19,16 @@ data "aws_ami" "ami" {
 }
 
 
-resource "aws_ebs_volume" "devops-volume" {
-  availability_zone = "us-east-1a"
-  size              = 50
-}
+# resource "aws_ebs_volume" "devops-volume" {
+#   availability_zone = "us-east-1a"
+#   size              = 50
+# }
 
-resource "aws_volume_attachment" "devops-volume1" {
-  device_name = "/dev/sdb"
-  volume_id   = aws_ebs_volume.devops-volume.id
-  instance_id = aws_instance.app.id
-}
+# resource "aws_volume_attachment" "devops-volume1" {
+#   device_name = "/dev/sdb"
+#   volume_id   = aws_ebs_volume.devops-volume.id
+#   instance_id = aws_instance.app.id
+# }
 
 
 
