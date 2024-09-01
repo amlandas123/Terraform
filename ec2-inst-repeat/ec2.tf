@@ -1,5 +1,5 @@
 resource "aws_instance" "app" {
-    ami = data.aws_ami.ami.id
+    ami = data.aws_ami.ami123.id
     instance_type = "t2.micro"
     vpc_security_group_ids = [aws_security_group.dasa2024.id]
     tags = {
@@ -27,10 +27,10 @@ output "instance_arn" {
     value = aws_instance.app.arn
 }
 
-data "aws_ami" "ami" {
+data "aws_ami" "ami123" {
   most_recent = true
   name_regex  = "DevOps-LabImage-Centos-8"
-  owners      = [471112781280]
+  owners      = ["471112781280"]
 
 }
 
