@@ -12,7 +12,7 @@ module "local-module" {
     source = "./local"
 }
 
-output "public_ip" {
-  value = module.local-module.public_ip
-}
+# output "public_ip" {
+#   value = module.local-module.public_ip
+# }
 
