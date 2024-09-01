@@ -7,12 +7,17 @@ terraform {
     region = "us-east-1"
   }
 }
-#root module where you want to run the command
+#this is a root module where you want to run the command
 module "local-module" {
     source = "./local"
 }
 
-# output "public_ip" {
-#   value = module.local-module.public_ip
-# }
+#fetching values from backend module
+output "public_ip" {
+  value = module.local-module.public_ip
+}
 
+output "vpc_id" {
+  value = module.local-module.vpc_id
+  
+}

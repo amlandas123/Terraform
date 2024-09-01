@@ -6,3 +6,7 @@ resource "aws_instance" "app-amlan" {
 output "public_ip" {
   value = aws_instance.app-amlan.public_ip
 }
+
+output "vpc_id" {
+    value = aws_instance.app-amlan.vpc_security_group_ids
+}
