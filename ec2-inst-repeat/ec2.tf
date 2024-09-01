@@ -14,7 +14,7 @@ data "aws_ami" "ami" {
 
   filter {
     name   = "name"
-    values = ["DevOps-LabImage-Centos-8"]
+    values = ["amlan-image"]
   }
 }
 
