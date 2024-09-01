@@ -17,7 +17,7 @@ output "public_ip" {
   value = module.local-module.public_ip
 }
 
-output "vpc_id" {
-  value = module.local-module.vpc_id
+# output "vpc_id" {
+#   value = module.local-module.vpc_id
   
-}
+# }
