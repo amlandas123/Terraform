@@ -1,4 +1,3 @@
-
 resource "null_resource" "playbook" {
 
     depends_on = [aws_instance.app-amlan]
