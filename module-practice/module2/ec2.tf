@@ -8,7 +8,7 @@ resource "aws_instance" "app-amlan" {
   provisioner "local-exec" {
     command = "echo ${self.private_ip} >> /home/centos/private_ips.txt"
 }
-
+}
 variable "sg" {}
 
 output "public_ip" {
