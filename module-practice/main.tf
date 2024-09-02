@@ -2,7 +2,7 @@
 #this is a root module where you want to run the command
 module "ec2" {
   source = "./module2"
-  sg123 = module.sg.sg_id    
+  sg = module.sg.sg_id  
 }
 
 module "sg" {
