@@ -7,7 +7,7 @@ resource "aws_instance" "app-amlan" {
     }
 }
 
-variable "sg" {}
+variable "sg123" {}
 
 output "public_ip" {
   value = aws_instance.app-amlan.public_ip

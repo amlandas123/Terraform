@@ -26,5 +26,5 @@ resource "aws_security_group" "peacock-sg-2024" {
 }
 
 output "sg_id" {
-  value = aws_security_group.peacock-sg-2024.id    #step1: Declaring the info as output
+  value = aws_security_group.peacock-sg-2024.id
 }
