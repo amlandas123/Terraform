@@ -5,6 +5,8 @@ resource "aws_instance" "app-amlan" {
     tags = {
       Name = "EC2-using-module"
     }
+  provisioner "local-exec" {
+    command = "echo ${self.private_ip} >> /home/centos/private_ips.txt"
 }
 
 variable "sg" {}
